@@ -1,0 +1,10 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/habit_route.rpy", line 674: choice menuitem expects a non-empty block.
+    "Hey, it wasn’t your fault.":
+                                 ^
+
+Ren'Py Version: Ren'Py 7.3.0.271
+Mon Nov 22 16:53:16 2021
