@@ -4,7 +4,6 @@ init:
     $ conversations = [] ## Conversations are held in here, for refrence, arrays start at 0 rather than 1.
     $ email_options = {} ## This is a dictionary
     $ current_conversation = None
-    $ NewEmail = False
 
 style emailframe1:
     padding gui.frame_borders.padding
@@ -44,10 +43,6 @@ init python:
             self.messages = []
 
         def Add_Message(self, sender, email, message, options, labels):
-            if NewEmail == True:
-                self.messages = []
-                global NewEmail
-                NewEmail = False
             for i in self.messages:
                 if i.sender == sender and i.email == email and i.message == message:
                     return
