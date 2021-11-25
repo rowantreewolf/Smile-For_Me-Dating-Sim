@@ -6,10 +6,16 @@ label Habit_Route:
 "You arrive at the shop and can see Boris through the store front window. He seems to be moving some things around and is rushing from one end of the store to the other, tending to as many plants as possible. Is he working all by himself today?"
 ##Play the sound of the shop bell ringing as the player enters.
 ##Scene opens at the flower shop interior with Boris greeting the player.
+
+show apronhabit neutral2
 bh "Sorry, the shop’s not quite open yet, please- Oh, It’s you!"
 ##He looks happy to see you.
+hide apronhabit neutral2
+show apronhabit excited
 bh "Thank you for coming by, [player_name]. How are you this morning?"
 mc "I’m doing fine. It looks like you’re quite busy."
+hide apronhabit excited
+show apronhabit happy2
 bh "Aha, you could say that I am. But it’s nothing to worry about."
 bh "I have a special job for us today! It is a very exciting time to work at a flower shop! Or… At least it should be."
 mc "What do you mean?"
@@ -1681,3 +1687,4 @@ bh "I love you."
 "You squeeze his hand back."
 
 mc "I love you too, Boris."
+jump main_menu
