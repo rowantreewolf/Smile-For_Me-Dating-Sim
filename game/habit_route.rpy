@@ -95,7 +95,7 @@ menu:
         jump pondscene
     "Let's try the flowerbeds.":
         bh "Okay, let's head there!"
-        jump Lileescene
+        jump fieldscene
     "Let's wait along the path.":
         bh "Okay, let's head there!"
         jump Pathscene
@@ -105,45 +105,21 @@ label pondscene:
 bh "Ah, the Duck Pond. All those cute little quacks ought to draw lots of people over."
 ##He notices Owen feeding some of the ducks.
 bh "Oh look! There’s someone already here! Let’s go talk with them!"
-##Owen shows up.
-bh "Hello, my plaid wearing friend! Do you have a moment?"
-owen "Er, s-sure. I guess."
-bh "I see that you're having a good time feeding the duckies bread."
-owen "I am…"
-bh "I should tell you that bread is actually very bad for ducks."
-owen "Why?"
-bh "A friend of mine once gave me an earful for feeding bread to pigeons. She said they were not healthy for them at all."
-owen " R-really? But everyone feeds them bread."
-bh "I know! It's such a tragedy! So many people around the world are still feeding birds bread and don’t know the consequences! The little birdies think they are full from eating it and then they neglect to eat more nutritious food. Then their feathers start to fall out, they lose the ability to fly, and then they get eaten by dogs and cats."
-bh "Oh, I apologize, I went off on a ramble."
-bh "May I interest you in our flyer for our Flower Shop? It details what we have to offer!"
-owen "Starts sniffling"
-bh "... It can also be used as a tissue."
-##Takes the flyers and blows his nose and wipes his tears, walking away still crying.
-##Accomplishment chime plays.
-mc "...."
-bh "...."
-mc "...."
-bh "....Well, one down! Let’s find the next future customer!"
+
+
+##Scene being rewritten
+
+
 ##Jump back to flyer choice screen.
-label Lileescene:
+
+label fieldscene:
 bh "Ah, excellent place to look! We’ll find someone who’s already interested in flowers here! We’ll practically let the flyer do the talking!"
 bh "Oh look! There’s someone here already!"
-##They approach Li Lee.
-bh "Hello, young person! It’s a fine day today to be sniffing the flowers, is it not?"
-lilee "........"
-bh "..... U-uh, ahem."
-bh "While you’re enjoying the flowers, do you have a moment to talk about the flower shop in town?"
-lilee "......."
-bh "..."
-lilee "....." ##Li Lee stare intensifies.
-bh "I’ll, uh just leave this with you."
-##He hands the flyer to Li Lee
-lilee "....." ##They look at the flyer then to you and then walk away.
-mc "That was kinda weird."
-bh "Maybe I intimidated them into silence. I tend to do that sometimes."
-"He tries to laugh it off."
-bh "Come on, let's try somewhere else."
+
+
+##Scene being rewritten
+
+
 ##Jump back to flyer choice screen.
 
 label Pathscene:
