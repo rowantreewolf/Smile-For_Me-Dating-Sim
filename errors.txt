@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/habit_route.rpy", line 674: choice menuitem expects a non-empty block.
-    "Hey, it wasn’t your fault.":
-                                 ^
+File "game/RouteSelect.rpy", line 11: expected statement.
+    RouteSelected = "None"
+                  ^
 
-Ren'Py Version: Ren'Py 7.3.0.271
-Mon Nov 22 16:53:16 2021
+Ren'Py Version: Ren'Py 7.4.11.2266
+Sun Apr 17 12:38:21 2022

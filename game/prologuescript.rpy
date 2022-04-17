@@ -4,7 +4,7 @@ define Boris_Email = "Hab_B@PedalMail.cob"
 define Petal_Mail = "PetalMail.Staff@PetalMail.com"
 define Parsley_Email = "parsleybotch@lawyerup.now"
 define Mirphy_Email = "mirphyfotos@flashmail.zoom"
-define Jerafina_Email = "jlt@h.k12.wy.us"
+define Jera_Email = "jlt@h.k12.wy.us"
 define MC_Email = "helper0fflowerz@daterang.sim"
 define Pabit_Email = "puppetmaster@PedalMail.cob"
 

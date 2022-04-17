@@ -1,101 +1,24 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/RouteSelect.rpy", line 84, in script
-    $ current_conversation.Add_Message("{color=# 8412281} Jerafina Tabouli{/color}", Jera_Email, "{color=# 8412281}I heard you were helping around town and was wondering if you would be able to come to school to help make decorations.{/color}", [], [])
-  File "game/RouteSelect.rpy", line 84, in <module>
-    $ current_conversation.Add_Message("{color=# 8412281} Jerafina Tabouli{/color}", Jera_Email, "{color=# 8412281}I heard you were helping around town and was wondering if you would be able to come to school to help make decorations.{/color}", [], [])
-  File "game/EmailSystem.rpy", line 50, in Add_Message
-    renpy.pause(7)
-  File "game/EmailSystem.rpy", line 53, in execute
-    screen Inbox():
-  File "game/EmailSystem.rpy", line 53, in execute
-    screen Inbox():
-  File "game/EmailSystem.rpy", line 54, in execute
-    frame:
-  File "game/EmailSystem.rpy", line 60, in execute
-    vbox:
-  File "game/EmailSystem.rpy", line 61, in execute
-    side "c r":
-  File "game/EmailSystem.rpy", line 63, in execute
-    viewport id "Inbox_list":
-  File "game/EmailSystem.rpy", line 65, in execute
-    vbox:
-  File "game/EmailSystem.rpy", line 66, in execute
-    for i in inbox_mail:
-  File "game/EmailSystem.rpy", line 67, in execute
-    frame:
-  File "game/EmailSystem.rpy", line 73, in execute
-    vbox:
-  File "game/EmailSystem.rpy", line 78, in execute
-    textbutton "Open" action [SetVariable("current_conversation", conversations[inbox_mail.index(i)]), Jump(i.label_name)]:
-  File "game/EmailSystem.rpy", line 78, in keywords
-    textbutton "Open" action [SetVariable("current_conversation", conversations[inbox_mail.index(i)]), Jump(i.label_name)]:
-IndexError: list index out of range
+  File "game/RouteSelect.rpy", line 23, in script
+    if RouteSelected == "None":
+SyntaxError: invalid syntax (RouteSelect.rpy, line 30)
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/RouteSelect.rpy", line 84, in script
-    $ current_conversation.Add_Message("{color=# 8412281} Jerafina Tabouli{/color}", Jera_Email, "{color=# 8412281}I heard you were helping around town and was wondering if you would be able to come to school to help make decorations.{/color}", [], [])
-  File "C:\Users\Caitlin\Desktop\Projects\renpy-7.1.3-sdk\renpy\ast.py", line 912, in execute
-    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
-  File "C:\Users\Caitlin\Desktop\Projects\renpy-7.1.3-sdk\renpy\python.py", line 1959, in py_exec_bytecode
-    exec bytecode in globals, locals
-  File "game/RouteSelect.rpy", line 84, in <module>
-    $ current_conversation.Add_Message("{color=# 8412281} Jerafina Tabouli{/color}", Jera_Email, "{color=# 8412281}I heard you were helping around town and was wondering if you would be able to come to school to help make decorations.{/color}", [], [])
-  File "game/EmailSystem.rpy", line 50, in Add_Message
-    renpy.pause(7)
-  File "C:\Users\Caitlin\Desktop\Projects\renpy-7.1.3-sdk\renpy\exports.py", line 1471, in pause
-    rv = renpy.ui.interact(mouse='pause', type='pause', roll_forward=roll_forward)
-  File "C:\Users\Caitlin\Desktop\Projects\renpy-7.1.3-sdk\renpy\ui.py", line 295, in interact
-    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
-  File "C:\Users\Caitlin\Desktop\Projects\renpy-7.1.3-sdk\renpy\display\core.py", line 2701, in interact
-    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, **kwargs)
-  File "C:\Users\Caitlin\Desktop\Projects\renpy-7.1.3-sdk\renpy\display\core.py", line 3093, in interact_core
-    root_widget.visit_all(lambda i : i.per_interact())
-  File "C:\Users\Caitlin\Desktop\Projects\renpy-7.1.3-sdk\renpy\display\core.py", line 541, in visit_all
-    d.visit_all(callback, seen)
-  File "C:\Users\Caitlin\Desktop\Projects\renpy-7.1.3-sdk\renpy\display\core.py", line 541, in visit_all
-    d.visit_all(callback, seen)
-  File "C:\Users\Caitlin\Desktop\Projects\renpy-7.1.3-sdk\renpy\display\core.py", line 541, in visit_all
-    d.visit_all(callback, seen)
-  File "C:\Users\Caitlin\Desktop\Projects\renpy-7.1.3-sdk\renpy\display\screen.py", line 430, in visit_all
-    callback(self)
-  File "C:\Users\Caitlin\Desktop\Projects\renpy-7.1.3-sdk\renpy\display\core.py", line 3093, in <lambda>
-    root_widget.visit_all(lambda i : i.per_interact())
-  File "C:\Users\Caitlin\Desktop\Projects\renpy-7.1.3-sdk\renpy\display\screen.py", line 440, in per_interact
-    self.update()
-  File "C:\Users\Caitlin\Desktop\Projects\renpy-7.1.3-sdk\renpy\display\screen.py", line 625, in update
-    self.screen.function(**self.scope)
-  File "game/EmailSystem.rpy", line 53, in execute
-    screen Inbox():
-  File "game/EmailSystem.rpy", line 53, in execute
-    screen Inbox():
-  File "game/EmailSystem.rpy", line 54, in execute
-    frame:
-  File "game/EmailSystem.rpy", line 60, in execute
-    vbox:
-  File "game/EmailSystem.rpy", line 61, in execute
-    side "c r":
-  File "game/EmailSystem.rpy", line 63, in execute
-    viewport id "Inbox_list":
-  File "game/EmailSystem.rpy", line 65, in execute
-    vbox:
-  File "game/EmailSystem.rpy", line 66, in execute
-    for i in inbox_mail:
-  File "game/EmailSystem.rpy", line 67, in execute
-    frame:
-  File "game/EmailSystem.rpy", line 73, in execute
-    vbox:
-  File "game/EmailSystem.rpy", line 78, in execute
-    textbutton "Open" action [SetVariable("current_conversation", conversations[inbox_mail.index(i)]), Jump(i.label_name)]:
-  File "game/EmailSystem.rpy", line 78, in keywords
-    textbutton "Open" action [SetVariable("current_conversation", conversations[inbox_mail.index(i)]), Jump(i.label_name)]:
-  File "<screen language>", line 78, in <module>
-IndexError: list index out of range
+  File "game/RouteSelect.rpy", line 23, in script
+    if RouteSelected == "None":
+  File "renpy/ast.py", line 1898, in execute
+    if renpy.python.py_eval(condition):
+  File "renpy/python.py", line 2274, in py_eval
+    code = py_compile(code, 'eval')
+  File "renpy/python.py", line 835, in py_compile
+    raise e
+SyntaxError: invalid syntax (RouteSelect.rpy, line 30)
 
-Windows-8-6.2.9200
-Ren'Py 7.3.0.271
+Windows-10-10.0.19041
+Ren'Py 7.4.11.2266
 Smile for Me Dating Sim Alpha0.1
-Wed Aug 25 07:21:57 2021
+Sun Apr 17 12:29:45 2022

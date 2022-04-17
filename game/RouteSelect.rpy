@@ -8,6 +8,7 @@ label routeselect:
     $ Add_Email("Pabit", Pabit_Email, "puppetmaster@PedalMail.cob", "Pabit_Email") ##Pabit
     $ Add_Email("Jerafina Tabouli", Jera_Email, "jlt@h.k12.wy.us", "Jerafina_Email") ##Jera
     $ current_conversation = conversations[0]
+    $ RouteSelected = "None"
     show screen Inbox
     show screen Current_Email
     call screen Current_Email
@@ -26,8 +27,7 @@ label Borisrouteintro:
         $ email_options = {"Reply and Accept":"AcceptHabitRoute", "Not yet":"routeselect"}
         $ current_conversation.Add_Message("{color=# 8412281} Boris Habit{/color}", Boris_Email, "{color=# 8412281}Flowers, bords and smilies. ~ Boris : -){/color}", ["Reply and Accept", "Not yet"], ["AcceptHabitRoute", "routeselect"])
         call screen EmailOptions
-    ## This if/else statement is what happens when the player chooses a route but the route is NOT Habit's
-    elif RouteSelect != "None" && Routeselect != "habit":
+    elif RouteSelected != "None" and RouteSelected != "Habit":
         show screen Current_Email
         # WRITE YOUR REJECTION DIALOGUE HERE.
         call screen Current_Email
@@ -56,7 +56,7 @@ label Kamal_Email:
         $ email_options = {"Reply and Accept":"AcceptKamalRoute", "Not yet":"routeselect"}
         $ current_conversation.Add_Message("{color=# 8412281} Kamal Bora{/color}", Kamal_Email, "{color=# 8412281}What do ya say?{/color}", ["Reply and Accept", "Not yet"], ["AcceptKamalRoute", "routeselect"])
         call screen EmailOptions
-    elif RouteSelected != "None" && Routeselect != "kamal":
+    elif RouteSelected != "None" and Routeselect != "kamal":
         show screen Current_Email
         ## Write your rejection dialogue here.
         call screen Current_Email
@@ -80,7 +80,7 @@ label Parsley_Email:
         $ email_options = {"Reply and Accept":"AcceptParsleyRoute", "Not yet":"routeselect"}
         $ current_conversation.Add_Message("{color=# 8412281} Parsley Botch{/color}", Parsley_Email, "{color=# 8412281}What do ya say?{/color}", ["Reply and Accept", "Not Yet"], ["AcceptParsleyRoute", "routeselect"])
         call screen EmailOptions
-    elif RouteSelected != "None" && RouteSelected != "parsley":
+    elif RouteSelected != "None" and RouteSelected != "parsley":
         show screen Current_Email
         ## Write your rejection dialogue here
         call screen Current_Email
@@ -105,7 +105,7 @@ label Jerafina_Email:
         $ email_options = {"Reply and Accept":"AcceptJerafinaRoute", "Not yet":"routeselect"}
         $ current_conversation.Add_Message("{color=# 8412281} Jerafina Tabouli{/color}", Jera_Email, "{color=# 8412281}What do ya say?{/color}", ["Reply and Accept", "Not yet"], ["AcceptJerafinaRoute", "routeselect"])
         call screen EmailOptions
-    elif RouteSelect != "None" && RouteSelect != "jerafina":
+    elif RouteSelect != "None" and RouteSelect != "jerafina":
         show screen Current_Email
         ## Rejection dialogue here
         call screen Current_Email
@@ -134,7 +134,7 @@ label Pabit_Email:
         $ email_options = {"Reply and Accept":"AcceptPabitRoute", "Not yet":"routeselect"}
         $ current_conversation.Add_Message("{color=# 8412281} Pabit{/color}", Pabit_Email, "{color=# 8412281}PLease?  -P{/color}", ["Reply and Accept", "Not yet"], ["AcceptPabitRoute", "routeselect"])
         call screen EmailOptions
-    elif RouteSelected != "None" && Routeselected != "pabit":
+    elif RouteSelected != "None" and Routeselected != "pabit":
         show screen CurrentEmail
         ## Rejection dialogue here
         call screen CurrentEmail
@@ -159,7 +159,7 @@ label Mirphy_Email:
         $ email_options = {"Reply and Accept":"AcceptMirphyRoute", "Not yet":"routeselect"}
         $ current_conversation.Add_Message("{color=# 8412281} Mirphy Fotoparat{/color}", Mirphy_Email, "{color=# 8412281}What do ya say?{/color}", ["Reply and Accept", "Not yet"], ["AcceptMirphyRoute", "routeselect"])
         call screen EmailOptions
-    elif RouteSelected != "None" && RouteSelected != "mirphy":
+    elif RouteSelected != "None" and RouteSelected != "mirphy":
         show screen Current_Email
         ## Rejection dialogue here
         call screen Current_Email
