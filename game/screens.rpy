@@ -107,23 +107,23 @@ screen kamalsparty():
         # the image used for when the mouse is not on a button
         ground "images/Background Images/Kamalsparty.jpg"
         # the image used for when a mouse is hovering over a button. Note that this contains every button, but the code will only use the section outlined in the hotspot
-        hover "images/Background Images/KamalspartyCopy.jpg"
+        hover "images/Background Images/roofnight_partyHover.png"
 
         ##each hotspot is a square that acts as a button. When a user hovers over it, the square's image is replace by a section of the 'hover' image above
         ##for enter values like this: (top left corner's x pos, top left corner's y pos, width in pix, height in pix)
-        hotspot (846,161,1127,419)  clicked Jump("partyboriskamandFK")
-        hotspot (582,295,743,591) clicked Jump("partyjeraandlu")
-        hotspot (19,416,486,757) clicked Jump("partyparsronanddal")
-        hotspot (771,440,1198,657) clicked Jump("partygillputandrandy")
-        hotspot (1350,287,1475,382) clicked Jump("partytrevorandnat")
-        hotspot (277,121,574,398) clicked Jump("borbraandqsing")
-        hotspot (747,282,819,424) clicked Jump("djtiff")
-        hotspot (1061,668,1356,913) clicked Jump("partygerry")
-        hotspot (1492,268,1632,575) clicked Jump("partyjim")
-        hotspot (512,609,747,904) clicked Jump("partymarv")
-        hotspot (1235,375,1363,657) clicked Jump("partymirphy")
-        hotspot (1143,241,1332,354) clicked Jump("partywallusandtrencil")
-        hotspot (0,776,497,918) clicked Jump("kamalpartyflowerbed")
+        hotspot (887, 194, 246, 289)  clicked Jump("partyboriskamandFK")
+        hotspot (576, 360, 165, 240) clicked Jump("partyjeraandlu")
+        hotspot (45, 417, 366, 461) clicked Jump("partyparsronanddal")
+        hotspot (867, 502, 353, 190) clicked Jump("partygillputandrandy")
+        hotspot (1343, 309, 142, 181) clicked Jump("partytrevorandnat")
+        hotspot (287, 148, 300, 289) clicked Jump("borbraandqsing")
+        hotspot (739, 293, 116, 99) clicked Jump("djtiff")
+        hotspot (1117, 727, 282, 180) clicked Jump("partygerry")
+        hotspot (1499, 293, 126, 227) clicked Jump("partyjim")
+        hotspot (468, 652, 217, 249) clicked Jump("partymarv")
+        hotspot (1247, 396, 108, 308) clicked Jump("partymirphy")
+        hotspot (1147, 258, 174, 175) clicked Jump("partywallusandtrencil")
+        hotspot (919, 85, 120, 112) clicked Jump("kamalpartyflowerbed")
         ##hotspot
         ##hotspot
 
